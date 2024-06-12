@@ -17,12 +17,13 @@ Once you are on the Remix website, create a new file by clicking on the "+" icon
 
 
 
-    // mint function
+// mint function
 function mint(address _address, uint _value ) public {
  Total_Supply += _value;
  balances[_address] += _value;
  }
-    // burn function
+ 
+// burn function
 
 function burn(address _address, uint _value ) public {
  if(balances[_address]>= _value){
