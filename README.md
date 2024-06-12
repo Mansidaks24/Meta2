@@ -14,13 +14,17 @@ To run this program, you can use Remix, an online Solidity IDE. To get started, 
 
 Once you are on the Remix website, create a new file by clicking on the "+" icon in the left-hand sidebar. Save the file with a .sol extension (e.g., Token.sol). Copy and paste the following code into the file:
 
-'''javascript
+'''
 // mint function
 function mint(address _address, uint _value ) public {
  Total_Supply += _value;
  balances[_address] += _value;
  }
 ''' 
+
+
+
+
 // burn function
 
 function burn(address _address, uint _value ) public {
